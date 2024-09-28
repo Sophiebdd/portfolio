@@ -36,7 +36,7 @@ function ContactForm() {
       <input
         type="text"
         name="from_name"  // Utiliser from_name pour correspondre au template EmailJS
-        placeholder="Vos nom et prénom"
+        placeholder="Votre nom et prénom"
         value={name}
         onChange={(e) => setName(e.target.value)}
         required

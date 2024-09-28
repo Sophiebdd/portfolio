@@ -19,16 +19,16 @@ function Accordion({ title, children }) {
         <span style={{ flexGrow: 1 }}>{title}</span>
         {isOpen ? <FiChevronUp /> : <FiChevronDown />}
       </div>
-      <CSSTransition
+      {<CSSTransition
         in={isOpen}
-        timeout={300}
+        timeout={500}
         classNames="accordion"
         unmountOnExit
       >
         <div style={{ padding: '10px' }}>
           {children}
         </div>
-      </CSSTransition>
+      </CSSTransition>}
     </div>
   );
 }

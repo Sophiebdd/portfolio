@@ -4,7 +4,7 @@
   }
   .accordion-enter-active {
     max-height: 500px; /* Ajustez selon la hauteur du contenu réel */
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.3s ease-out;
   }
   .accordion-exit {
     max-height: 500px; /* Doit correspondre à la hauteur totale lors de l'affichage */
@@ -13,5 +13,5 @@
   .accordion-exit-active {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.5s ease-out;
+    transition: max-height 1.5s ease;
   }
