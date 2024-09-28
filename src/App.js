@@ -12,7 +12,7 @@ function App() {
       <hr />
 
       <Accordion title={<span><FaUser /> About</span>}>
-        <p>{`Bonjour, je suis Sophie et je suis développeuse web junior. Auparavant éducatrice de jeunes enfants en crèche, j'ai souhaité me reconvertir afin de retrouver un équilibre entrema vie professionnelle et ma vie personnelle, et d'allier mon travail avec ma passion pour l'informatique.`} </p>
+        <p>{`Bonjour, je suis Sophie et je suis développeuse web junior. Auparavant éducatrice de jeunes enfants en crèche, j'ai souhaité me reconvertir afin de retrouver un équilibre entre ma vie professionnelle et ma vie personnelle, et d'allier mon travail avec ma passion pour l'informatique.`} </p>
       </Accordion>
 
       <Accordion title={<span><FaBriefcase /> Work</span>}>
