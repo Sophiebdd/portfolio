@@ -59,7 +59,7 @@ function ContactForm() {
         required
         style={{ padding: '10px', fontSize: '1em', height: '100px' }}
       />
-      <button type="submit" style={{ padding: '10px', fontSize: '1em', cursor: 'pointer' }}>Envoyer</button>
+      <button type="submit" style={{ padding: '10px', fontSize: '1em', cursor: 'pointer', border: 'none', borderRadius: '10px', backgroundColor: '#9800E6', color: '#ffffff' }}>Envoyer</button>
     </form>
   );
 }

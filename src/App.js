@@ -3,11 +3,12 @@ import ProfileHeader from './components/ProfileHeader';
 import Accordion from './components/Accordion';
 import ContactForm from './components/ContactForm';
 import SocialLinks from './components/SocialLinks';
-import { FaUser, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaCertificate, FaFile, FaPhone } from 'react-icons/fa';
+import { FaUser, FaBriefcase, FaGraduationCap, FaProjectDiagram } from 'react-icons/fa';
+import { GrContact } from "react-icons/gr";
 
 function App() {
   return (
-    <div style={{ maxWidth: '600px', margin: 'auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ maxWidth: '600px', margin: 'auto', padding: '20px', fontFamily: 'Arial, sans-serif', color: 'f8f8f8' }}>
       <ProfileHeader />
       <hr />
 
@@ -28,9 +29,9 @@ function App() {
             <strong>Stagiaire:</strong> Développeuse web junior (gaea21, Genève)
             <br />
             <span style={{ color: '#555' }}>
-              Stage de 3 mois au cours duquel j'ai appris à utiliser React dans une architecture Symfony UX.
+              {`Stage de 3 mois au cours duquel j'ai appris à utiliser React dans une architecture Symfony UX.
               Mes tâches ont été de restructurer la page newsletter du site, de créer une page d'archives comportant
-              les flipbooks des newsletters passées, mais également de créer un back-office permettant de gérer les newsletters.
+              les flipbooks des newsletters passées, mais également de créer un back-office permettant de gérer les newsletters.`}
             </span>
           </li>
         </ul>
@@ -39,7 +40,7 @@ function App() {
       <Accordion title={<span><FaGraduationCap /> Studies</span>}>
         <ul style={{ listStyleType: 'disc', marginLeft: '20px', lineHeight: '1.8' }}>
           <li>
-            <strong>2024 - 2026:</strong> Préparation du Titre Professionnel de Concepteur Développeur d'Applications option IA
+            <strong>2024 - 2026:</strong> {`Préparation du Titre Professionnel de Concepteur Développeur d'Applications option IA`}
             <br />
             <span style={{ color: '#555' }}>(avec la Fabrique Numérique Paloise)</span>
           </li>
@@ -49,7 +50,7 @@ function App() {
             <span style={{ color: '#555' }}>(avec l'Afpa)</span>
             <ul style={{ listStyleType: 'circle', marginLeft: '20px', color: '#555' }}>
               <li>Création d'un back-office en PHP procédural avec interface de connexion</li>
-              <li>Développement d'une application affichant la météo en temps réel avec Angular</li>
+              <li>{`Développement d'une application affichant la météo en temps réel avec Angular`}</li>
             </ul>
           </li>
         </ul>
@@ -70,8 +71,7 @@ function App() {
       </Accordion> 
       */}
 
-      <Accordion title={<span><FaPhone /> Contact</span>}>
-        <h6>Contactez-moi</h6>
+      <Accordion title={<span><GrContact /> Contact</span>}>
         <ContactForm />
         <SocialLinks />
       </Accordion>
